@@ -11,7 +11,7 @@ export class FoodService {
   constructor(private http: HttpClient) { }
 
   getAll() {
-    return this.http.get<Restaurant[]>('http://localhost:8080/restaurant');
+    return this.http.get<Food[]>('http://localhost:8080/plates');
   }
   
 }
